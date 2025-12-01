@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DhanpalTube</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <h1 class="title">DhanpalTube</h1>
+
+      <input
+        id="urlInput"
+        type="text"
+        placeholder="https://www.youtube.com/watch?v=..."
+      />
+
+      <button id="downloadBtn">Download</button>
+
+      <div class="quality-container">
+        <label for="qualitySelect">Quality</label>
+        <select id="qualitySelect">
+          <option value="best">Best</option>
+          <option value="1080p">1080p</option>
+          <option value="720p">720p</option>
+          <option value="480p">480p</option>
+          <option value="360p">360p</option>
+          <option value="audio">Audio Only</option>
+        </select>
+      </div>
+
+      <p class="description">Download YouTube videos in various qualities.</p>
+      <footer>© 2024 Dhanpal Sharma</footer>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
